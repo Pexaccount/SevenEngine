@@ -1,0 +1,16 @@
+{
+ "seed": 20260924,
+ "t_start": "2026-09-24 19:42:50",
+ "virus_index_sec": 8.7,
+ "virus_folders": 33,
+ "virus_pe_total": 19841,
+ "virus_scripts_total": 174,
+ "virus_others_total": 9529,
+ "virus_pe_sampled": 351,
+ "white_sampled": 750,
+ "sys_sampled": 250,
+ "lgbm": true,
+ "onnx": true,
+ "scan_sec": 563.7,
+ "t_end": "2026-09-24 19:52:33"
+}

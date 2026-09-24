@@ -1,0 +1,1627 @@
+{
+ "groups": {
+  "virus_pe": {
+   "total": 312,
+   "scanned": 312,
+   "error": 0,
+   "scan_rate": 100.0,
+   "mal": 308,
+   "clean": 4,
+   "wl": 0,
+   "det_rate": 98.72,
+   "mean_sec": 0.417,
+   "med_sec": 0.358,
+   "p95_sec": 1.08,
+   "max_sec": 4.36,
+   "engines": {
+    "SE-Precise": 104,
+    "PE-Suspicious": 97,
+    "SE-Chain": 65,
+    "LightGBM": 28,
+    "PE-LowImport": 14,
+    "CLEAN": 4
+   }
+  },
+  "virus_script": {
+   "total": 39,
+   "scanned": 39,
+   "error": 0,
+   "scan_rate": 100.0,
+   "mal": 30,
+   "clean": 9,
+   "wl": 0,
+   "det_rate": 76.92,
+   "mean_sec": 0.627,
+   "med_sec": 0.137,
+   "p95_sec": 2.366,
+   "max_sec": 2.378,
+   "engines": {
+    "Script": 11,
+    "CLEAN": 9,
+    "SE-Precise": 17,
+    "PE-Suspicious": 1,
+    "LightGBM": 1
+   }
+  },
+  "virus_other": {
+   "total": 60,
+   "scanned": 60,
+   "error": 0,
+   "scan_rate": 100.0,
+   "mal": 14,
+   "clean": 43,
+   "wl": 3,
+   "det_rate": null,
+   "mean_sec": 0.151,
+   "med_sec": 0.132,
+   "p95_sec": 0.194,
+   "max_sec": 1.754,
+   "engines": {
+    "CLEAN": 43,
+    "CUSTOM": 9,
+    "WHITELIST": 3,
+    "SE-Precise": 1,
+    "Disguise": 4
+   }
+  },
+  "white_pf": {
+   "total": 600,
+   "scanned": 600,
+   "error": 0,
+   "scan_rate": 100.0,
+   "mal": 127,
+   "clean": 473,
+   "wl": 0,
+   "det_rate": null,
+   "mean_sec": 0.392,
+   "med_sec": 0.205,
+   "p95_sec": 0.971,
+   "max_sec": 14.226,
+   "engines": {
+    "PE-Suspicious": 34,
+    "LightGBM": 66,
+    "LightGBM-White": 463,
+    "SE-Chain": 18,
+    "CLEAN": 10,
+    "SE-Precise": 9
+   }
+  },
+  "white_pf_x86": {
+   "total": 150,
+   "scanned": 150,
+   "error": 0,
+   "scan_rate": 100.0,
+   "mal": 18,
+   "clean": 132,
+   "wl": 0,
+   "det_rate": null,
+   "mean_sec": 0.706,
+   "med_sec": 0.228,
+   "p95_sec": 1.525,
+   "max_sec": 37.426,
+   "engines": {
+    "LightGBM-White": 131,
+    "SE-Precise": 14,
+    "LightGBM": 2,
+    "PE-Suspicious": 1,
+    "SE-Chain": 1,
+    "CLEAN": 1
+   }
+  },
+  "white_sys": {
+   "total": 250,
+   "scanned": 250,
+   "error": 0,
+   "scan_rate": 100.0,
+   "mal": 0,
+   "clean": 250,
+   "wl": 0,
+   "det_rate": null,
+   "mean_sec": 0.236,
+   "med_sec": 0.209,
+   "p95_sec": 0.377,
+   "max_sec": 2.031,
+   "engines": {
+    "LightGBM-White": 250
+   }
+  }
+ },
+ "overall": {
+  "total_sampled": 1411,
+  "total_scanned": 1411,
+  "total_error": 0,
+  "scan_rate": 100.0,
+  "virus_sampled": 351,
+  "virus_scanned": 351,
+  "detection_rate": 96.3,
+  "white_sampled": 1000,
+  "false_positives": 145,
+  "fpr": 14.5,
+  "fpr_ci95": [
+   12.45,
+   16.82
+  ],
+  "det_ci95": [
+   93.77,
+   97.82
+  ],
+  "mean_sec": 0.4,
+  "med_sec": 0.217,
+  "p95_sec": 0.997,
+  "throughput_fpm": 150.2
+ },
+ "detect": {},
+ "white": {},
+ "latency": {},
+ "engine_mix": {
+  "SE-Precise": 145,
+  "PE-Suspicious": 133,
+  "LightGBM": 97,
+  "SE-Chain": 84,
+  "PE-LowImport": 14,
+  "Script": 11,
+  "CUSTOM": 9,
+  "Disguise": 4
+ },
+ "conf_hist": {
+  "0-9": 0,
+  "10-19": 0,
+  "20-29": 0,
+  "30-39": 0,
+  "40-49": 0,
+  "50-59": 4,
+  "60-69": 1,
+  "70-79": 21,
+  "80-89": 20,
+  "90-99": 451
+ },
+ "by_family": {
+  "NEW": {
+   "n": 50,
+   "det": 50,
+   "rate": 100.0
+  },
+  "V": {
+   "n": 50,
+   "det": 50,
+   "rate": 100.0
+  },
+  "VIR": {
+   "n": 50,
+   "det": 48,
+   "rate": 96.0
+  },
+  "Virus": {
+   "n": 50,
+   "det": 50,
+   "rate": 100.0
+  },
+  "样本": {
+   "n": 50,
+   "det": 49,
+   "rate": 98.0
+  },
+  "_scripts_": {
+   "n": 40,
+   "det": 30,
+   "rate": 75.0
+  },
+  "a": {
+   "n": 8,
+   "det": 8,
+   "rate": 100.0
+  },
+  "2": {
+   "n": 3,
+   "det": 3,
+   "rate": 100.0
+  },
+  "20260707Stealer 14x": {
+   "n": 3,
+   "det": 3,
+   "rate": 100.0
+  },
+  "20260722Stealer 10x": {
+   "n": 3,
+   "det": 3,
+   "rate": 100.0
+  },
+  "20260727FakeApp 20x": {
+   "n": 3,
+   "det": 3,
+   "rate": 100.0
+  },
+  "20260731Stealer 27x": {
+   "n": 3,
+   "det": 3,
+   "rate": 100.0
+  },
+  "256病毒样本": {
+   "n": 3,
+   "det": 3,
+   "rate": 100.0
+  },
+  "Mal-4x": {
+   "n": 3,
+   "det": 3,
+   "rate": 100.0
+  },
+  "ScanTest2012": {
+   "n": 3,
+   "det": 3,
+   "rate": 100.0
+  },
+  "aqpp_setup.6653014": {
+   "n": 3,
+   "det": 3,
+   "rate": 100.0
+  },
+  "infected2024082201": {
+   "n": 3,
+   "det": 3,
+   "rate": 100.0
+  },
+  "病毒": {
+   "n": 3,
+   "det": 3,
+   "rate": 100.0
+  },
+  "自制": {
+   "n": 3,
+   "det": 3,
+   "rate": 100.0
+  },
+  "PE-Malware": {
+   "n": 2,
+   "det": 2,
+   "rate": 100.0
+  },
+  "WinXP.Horror.Destructive": {
+   "n": 2,
+   "det": 2,
+   "rate": 100.0
+  },
+  "DeepSeek_v4_win": {
+   "n": 1,
+   "det": 1,
+   "rate": 100.0
+  },
+  "Feishu-win32_x64-7.67.9-signed": {
+   "n": 1,
+   "det": 1,
+   "rate": 100.0
+  },
+  "HelloWorld": {
+   "n": 1,
+   "det": 1,
+   "rate": 100.0
+  },
+  "OneChat-win-AutoSetup": {
+   "n": 1,
+   "det": 1,
+   "rate": 100.0
+  },
+  "PowerWord.800.12012": {
+   "n": 1,
+   "det": 1,
+   "rate": 100.0
+  },
+  "SodaMusic-v3.2.1-official-win32_x64": {
+   "n": 1,
+   "det": 1,
+   "rate": 100.0
+  },
+  "dingTtalkx64_down": {
+   "n": 1,
+   "det": 1,
+   "rate": 100.0
+  },
+  "feishuxz-x64.6.15": {
+   "n": 1,
+   "det": 1,
+   "rate": 100.0
+  },
+  "gou_shurufa_x64": {
+   "n": 1,
+   "det": 1,
+   "rate": 100.0
+  },
+  "qianniuSetup.4.0": {
+   "n": 1,
+   "det": 1,
+   "rate": 100.0
+  },
+  "sougouExpiorerr_Setup_x64_25537": {
+   "n": 1,
+   "det": 1,
+   "rate": 100.0
+  },
+  "yfy-fanyifuan-6.22.8": {
+   "n": 1,
+   "det": 1,
+   "rate": 100.0
+  },
+  "恶性免杀样本": {
+   "n": 1,
+   "det": 1,
+   "rate": 100.0
+  }
+ },
+ "missed": [
+  {
+   "path": "D:\\训练病毒\\VIR\\13\\ff91281970ccf147e64f92b262d715416bf68b022401bed71016d5cfe3967520_2026-03-20_b40d553a5634d3284ecd3b998b8170f3_amadey_cobalt-strike_elex_hijackloader_vidar_wannacry",
+   "family": "VIR",
+   "result": "CLEAN",
+   "err": null,
+   "sec": 0.225
+  },
+  {
+   "path": "D:\\训练病毒\\VIR\\13\\1b360f0cbcee3aca2dceeffa9b84984296348cfdc372b72251a711b31063210e_2026-03-20_7733d1fec7dc566981c8c6865b56d761_amadey_cobalt-strike_hijackloader_satacom_vidar_wannacry",
+   "family": "VIR",
+   "result": "CLEAN",
+   "err": null,
+   "sec": 0.274
+  },
+  {
+   "path": "D:\\训练病毒\\样本\\Bazaar.2026.06.分卷\\Bazaar.2026.06\\Bazaar.2026.06\\HEUR-Trojan.Win32.Agent.pef-c4fabfcf75a6745956013a61656e620c485d9f39b286b4c7e3b099fe1bba652a",
+   "family": "样本",
+   "result": "CLEAN",
+   "err": null,
+   "sec": 0.422
+  },
+  {
+   "path": "D:\\训练病毒\\V\\2026-08-22\\fa885ac71348f4849359baf40fad7e039d4112e6fdf5a269a3686bab89379dad\\PhoenixMiner_5.4d_Windows\\PhoenixMiner_5.4d_Windows\\PhoenixMiner_5.4d_Windows\\doc\\_static\\documentation_options.js",
+   "family": "_scripts_",
+   "result": "CLEAN",
+   "err": null,
+   "sec": 2.378
+  },
+  {
+   "path": "D:\\训练病毒\\V\\2020-12-31\\d4db868c7d173dd2462fcd016879f201ccf0b66677320cb139d8997b48290519\\Fatura do mês de Dezembro.JS",
+   "family": "_scripts_",
+   "result": "CLEAN",
+   "err": null,
+   "sec": 4.288
+  },
+  {
+   "path": "D:\\训练病毒\\V\\2020-12-29\\252df56f5c9521fd1dc9bdee5ed7160b3a1caaf995ce2b7fc44825706f294788.ps1",
+   "family": "_scripts_",
+   "result": "CLEAN",
+   "err": null,
+   "sec": 2.366
+  },
+  {
+   "path": "D:\\训练病毒\\V\\2026-08-22\\fe4f759cba217e809922637d76cd04a94bac427297bbfe8bd1e023c2b89b4502\\ORDER#2854-pdf.js",
+   "family": "_scripts_",
+   "result": "CLEAN",
+   "err": null,
+   "sec": 2.251
+  },
+  {
+   "path": "D:\\训练病毒\\V\\2020-12-22\\80f127d7e2de4d2b07a1e1684d9b06848d084c32b99f42f720adb602b1fb600e.vbs",
+   "family": "_scripts_",
+   "result": "CLEAN",
+   "err": null,
+   "sec": 2.216
+  },
+  {
+   "path": "D:\\训练病毒\\V\\2026-08-22\\4adf23fc27cef167473728d1e89349f82f88630fe62a01f017834834d8f02e67.vbs",
+   "family": "_scripts_",
+   "result": "CLEAN",
+   "err": null,
+   "sec": 2.182
+  },
+  {
+   "path": "D:\\训练病毒\\V\\2026-08-22\\fa885ac71348f4849359baf40fad7e039d4112e6fdf5a269a3686bab89379dad\\PhoenixMiner_5.4d_Windows\\PhoenixMiner_5.4d_Windows\\PhoenixMiner_5.4d_Windows\\doc\\_static\\searchtools.js",
+   "family": "_scripts_",
+   "result": "CLEAN",
+   "err": null,
+   "sec": 2.08
+  },
+  {
+   "path": "D:\\训练病毒\\V\\2026-08-22\\fa885ac71348f4849359baf40fad7e039d4112e6fdf5a269a3686bab89379dad\\PhoenixMiner_5.4d_Windows\\PhoenixMiner_5.4d_Windows\\PhoenixMiner_5.4d_Windows\\doc\\_static\\doctools.js",
+   "family": "_scripts_",
+   "result": "CLEAN",
+   "err": null,
+   "sec": 2.124
+  },
+  {
+   "path": "D:\\训练病毒\\V\\2026-08-22\\fa885ac71348f4849359baf40fad7e039d4112e6fdf5a269a3686bab89379dad\\PhoenixMiner_5.4d_Windows\\PhoenixMiner_5.4d_Windows\\PhoenixMiner_5.4d_Windows\\doc\\_static\\jquery.js",
+   "family": "_scripts_",
+   "result": "CLEAN",
+   "err": null,
+   "sec": 2.116
+  },
+  {
+   "path": "D:\\训练病毒\\V\\2026-08-22\\a40d2135c9116b9c23eea5c33d32dab4346518c4717b320fbb4ec8f6bc3188ad.js",
+   "family": "_scripts_",
+   "result": "CLEAN",
+   "err": null,
+   "sec": 2.291
+  }
+ ],
+ "fps": [
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\gpgsm.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.qgv|PE-Suspicious|88",
+   "conf": 88,
+   "sec": 0.454
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\msys-magic-1.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.2rc|LightGBM|89",
+   "conf": 89,
+   "sec": 0.578
+  },
+  {
+   "path": "C:\\Program Files\\Git\\git-cmd.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.7yr|LightGBM|97",
+   "conf": 97,
+   "sec": 0.52
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\tset.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.i4k|LightGBM|99",
+   "conf": 99,
+   "sec": 0.443
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\infocmp.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.ynx|LightGBM|99",
+   "conf": 99,
+   "sec": 0.501
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\stdbuf.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.8ch|LightGBM|99",
+   "conf": 99,
+   "sec": 0.519
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\lib\\perl5\\core_perl\\auto\\Sys\\Syslog\\Syslog.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.ips|LightGBM|98",
+   "conf": 98,
+   "sec": 0.444
+  },
+  {
+   "path": "C:\\Program Files\\Git\\mingw64\\bin\\git-upload-archive.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Injector.ji2|PE-Suspicious|95",
+   "conf": 95,
+   "sec": 1.129
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\gawk.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.rim|PE-Suspicious|95",
+   "conf": 95,
+   "sec": 0.476
+  },
+  {
+   "path": "C:\\Program Files\\Tencent\\QQNT\\versions\\9.9.36-53644\\resources\\app\\win64\\client_extension.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Injector.fb1|SE-Chain|95",
+   "conf": 95,
+   "sec": 0.383
+  },
+  {
+   "path": "C:\\Program Files\\Git\\mingw64\\libexec\\git-core\\libbrotlienc.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.stb|SE-Chain|86",
+   "conf": 86,
+   "sec": 0.364
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\ssh-keyscan.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.511|PE-Suspicious|95",
+   "conf": 95,
+   "sec": 0.418
+  },
+  {
+   "path": "C:\\Program Files\\XIGUASecurity\\Sandboxie-Plus-x64-v1.18.1.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.tsr|SE-Chain|95",
+   "conf": 95,
+   "sec": 0.773
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\msys-svn_ra_local-1-0.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.y7b|LightGBM|98",
+   "conf": 98,
+   "sec": 0.488
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\lib\\gnupg\\gpg-check-pattern.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.drq|PE-Suspicious|94",
+   "conf": 94,
+   "sec": 0.297
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\false.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.3g2|LightGBM|99",
+   "conf": 99,
+   "sec": 0.477
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\dumpsexp.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.vc4|LightGBM|99",
+   "conf": 99,
+   "sec": 0.437
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\lib\\openssl\\engines-3\\padlock.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.ege|LightGBM|94",
+   "conf": 94,
+   "sec": 0.426
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\sdiff.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.xih|LightGBM|99",
+   "conf": 99,
+   "sec": 0.516
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\tabs.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.rmh|LightGBM|99",
+   "conf": 99,
+   "sec": 0.453
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\lib\\coreutils\\libstdbuf.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.jg1|LightGBM|96",
+   "conf": 96,
+   "sec": 0.424
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\msys-p11-kit-0.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.6ah|PE-Suspicious|88",
+   "conf": 88,
+   "sec": 0.865
+  },
+  {
+   "path": "C:\\Program Files\\Git\\mingw64\\libexec\\git-core\\System.ValueTuple.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|Trojan.Win32.Generic.jtg|SE-Precise|95",
+   "conf": 95,
+   "sec": 0.064
+  },
+  {
+   "path": "C:\\Program Files\\Realtek\\Audio\\HDA\\vncutil64.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.xcc|PE-Suspicious|95",
+   "conf": 95,
+   "sec": 0.427
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\tty.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.dgt|LightGBM|99",
+   "conf": 99,
+   "sec": 0.477
+  },
+  {
+   "path": "C:\\Program Files\\Git\\mingw64\\libexec\\git-core\\tk86.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.KeyLogger.07r|PE-Suspicious|95",
+   "conf": 95,
+   "sec": 0.673
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\lib\\perl5\\core_perl\\auto\\NDBM_File\\NDBM_File.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.p9p|LightGBM|98",
+   "conf": 98,
+   "sec": 0.453
+  },
+  {
+   "path": "C:\\Program Files\\XIGUASecurity\\Driver\\MelixEDR\\Service\\Melix.Service.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.meu|LightGBM|99",
+   "conf": 99,
+   "sec": 0.58
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\pluginviewer.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.7ij|LightGBM|99",
+   "conf": 99,
+   "sec": 0.447
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\ls.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.rb4|PE-Suspicious|95",
+   "conf": 95,
+   "sec": 0.32
+  },
+  {
+   "path": "C:\\Program Files\\Git\\mingw64\\libexec\\git-core\\Avalonia.Base.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Ransom.zss|PE-Suspicious|95",
+   "conf": 95,
+   "sec": 0.573
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\lib\\perl5\\vendor_perl\\auto\\Term\\ReadKey\\ReadKey.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.ja0|LightGBM|99",
+   "conf": 99,
+   "sec": 0.458
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\lib\\perl5\\vendor_perl\\auto\\SVN\\_Core\\_Core.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.y7a|LightGBM|74",
+   "conf": 74,
+   "sec": 0.997
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\dirmngr.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.qx0|PE-Suspicious|95",
+   "conf": 95,
+   "sec": 0.426
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\lib\\perl5\\core_perl\\auto\\threads\\threads.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.458|LightGBM|94",
+   "conf": 94,
+   "sec": 0.522
+  },
+  {
+   "path": "C:\\Program Files\\Git\\mingw64\\lib\\p11-kit\\p11-kit-remote.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Backdoor.Win32.Remote.3sd|SE-Chain|80",
+   "conf": 80,
+   "sec": 0.286
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\msys-crypt-2.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Crypt.0qc|LightGBM|71",
+   "conf": 71,
+   "sec": 0.563
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\reset.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|Trojan.Win32.Generic.sdv|SE-Precise|95",
+   "conf": 95,
+   "sec": 0.07
+  },
+  {
+   "path": "C:\\Program Files\\Git\\mingw64\\bin\\bzip2recover.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.8kb|LightGBM|99",
+   "conf": 99,
+   "sec": 0.501
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\getfacl.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.n7y|PE-Suspicious|95",
+   "conf": 95,
+   "sec": 0.255
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\msys-svn_ra-1-0.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.srw|LightGBM|98",
+   "conf": 98,
+   "sec": 0.526
+  },
+  {
+   "path": "C:\\Program Files\\Tencent\\QQNT\\versions\\9.9.36-53644\\resources\\app\\uiohook.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.KeyLogger.z18|SE-Chain|95",
+   "conf": 95,
+   "sec": 0.314
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\lib\\perl5\\core_perl\\auto\\Opcode\\Opcode.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.cp1|LightGBM|98",
+   "conf": 98,
+   "sec": 0.462
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\base64.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.vh9|LightGBM|99",
+   "conf": 99,
+   "sec": 0.485
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\msys-lzma-5.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.ujf|LightGBM|79",
+   "conf": 79,
+   "sec": 0.589
+  },
+  {
+   "path": "C:\\Program Files\\Tencent\\QQNT\\versions\\9.9.36-53644\\api-ms-win-crt-convert-l1-1-0.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|Trojan.Win32.Generic.h6k|SE-Precise|95",
+   "conf": 95,
+   "sec": 0.08
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\ldh.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.j7m|LightGBM|98",
+   "conf": 98,
+   "sec": 0.58
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\od.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.2zr|LightGBM|99",
+   "conf": 99,
+   "sec": 0.581
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\lib\\sasl2\\msys-digestmd5-3.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.q10|PE-Suspicious|88",
+   "conf": 88,
+   "sec": 0.274
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\gkill.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.z77|LightGBM|99",
+   "conf": 99,
+   "sec": 0.483
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\d2u.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.54n|PE-Suspicious|85",
+   "conf": 85,
+   "sec": 0.277
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\ps.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.ubr|PE-Suspicious|95",
+   "conf": 95,
+   "sec": 0.278
+  },
+  {
+   "path": "C:\\Program Files\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\ripgrep\\x64-win32\\rg.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.ein|SE-Chain|95",
+   "conf": 95,
+   "sec": 1.696
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\psl.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.z5c|LightGBM|99",
+   "conf": 99,
+   "sec": 0.469
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\tail.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.4wm|PE-Suspicious|94",
+   "conf": 94,
+   "sec": 0.29
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\tput.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.scm|LightGBM|99",
+   "conf": 99,
+   "sec": 0.463
+  },
+  {
+   "path": "C:\\Program Files\\Tencent\\QQNT\\versions\\9.9.36-53644\\resources\\app\\crashpad_handler.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Injector.ta6|SE-Chain|95",
+   "conf": 95,
+   "sec": 1.0
+  },
+  {
+   "path": "C:\\Program Files\\Git\\mingw64\\bin\\libbz2-1.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.uw4|SE-Chain|82",
+   "conf": 82,
+   "sec": 0.3
+  },
+  {
+   "path": "C:\\Program Files\\Git\\mingw64\\share\\git\\edit-git-bash.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.rcg|LightGBM|98",
+   "conf": 98,
+   "sec": 0.491
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\bzcat.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.f0g|PE-Suspicious|85",
+   "conf": 85,
+   "sec": 0.295
+  },
+  {
+   "path": "C:\\Program Files\\Tencent\\QQNT\\versions\\9.9.36-53644\\ucrtbase.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|Trojan.Win32.Generic.bfa|SE-Precise|95",
+   "conf": 95,
+   "sec": 0.08
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\md5sum.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.74x|LightGBM|99",
+   "conf": 99,
+   "sec": 0.512
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\msys-bz2-1.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.wmi|PE-Suspicious|85",
+   "conf": 85,
+   "sec": 0.286
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\find.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.z9q|LightGBM|98",
+   "conf": 98,
+   "sec": 0.733
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\tic.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.41m|LightGBM|99",
+   "conf": 99,
+   "sec": 0.583
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\unlink.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.n9f|LightGBM|99",
+   "conf": 99,
+   "sec": 0.495
+  },
+  {
+   "path": "C:\\Program Files\\NVIDIA Corporation\\Control Panel Client\\NvGpuUtilization.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.KeyLogger.6fa|SE-Chain|95",
+   "conf": 95,
+   "sec": 1.094
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\msys-svn_subr-1-0.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Stealer.p1c|PE-Suspicious|95",
+   "conf": 95,
+   "sec": 0.533
+  },
+  {
+   "path": "C:\\Program Files\\Git\\mingw64\\libexec\\git-core\\git-sh-i18n--envsubst.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Injector.brk|PE-Suspicious|95",
+   "conf": 95,
+   "sec": 0.808
+  },
+  {
+   "path": "C:\\Program Files\\XIGUASecurity\\Driver\\MelixEDR\\Melix.Core.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.ykh|LightGBM|98",
+   "conf": 98,
+   "sec": 0.501
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\perl5.42.3.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.rk4|LightGBM|98",
+   "conf": 98,
+   "sec": 0.458
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\lib\\perl5\\core_perl\\auto\\Data\\Dumper\\Dumper.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.kyk|LightGBM|98",
+   "conf": 98,
+   "sec": 0.492
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\lib\\perl5\\core_perl\\auto\\Encode\\EBCDIC\\EBCDIC.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.384|LightGBM|82",
+   "conf": 82,
+   "sec": 0.463
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\msys-svn_repos-1-0.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.16n|LightGBM|64",
+   "conf": 64,
+   "sec": 0.684
+  },
+  {
+   "path": "C:\\Program Files\\Git\\mingw64\\bin\\libssh2-1.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.4i4|PE-Suspicious|93",
+   "conf": 93,
+   "sec": 0.367
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\msys-hcrypto-4.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Crypt.76z|LightGBM|87",
+   "conf": 87,
+   "sec": 0.662
+  },
+  {
+   "path": "C:\\Program Files\\Git\\mingw64\\libexec\\git-core\\libpcre2-8-0.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.czk|SE-Chain|82",
+   "conf": 82,
+   "sec": 0.365
+  },
+  {
+   "path": "C:\\Program Files\\obs-studio\\bin\\64bit\\avcodec-62.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.pcg|PE-Suspicious|85",
+   "conf": 85,
+   "sec": 4.698
+  },
+  {
+   "path": "C:\\Program Files\\obs-studio\\bin\\64bit\\obs-ffmpeg-mux.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.ne5|LightGBM|91",
+   "conf": 91,
+   "sec": 0.499
+  },
+  {
+   "path": "C:\\Program Files\\Git\\unins000.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.KeyLogger.c3q|SE-Chain|95",
+   "conf": 95,
+   "sec": 1.975
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\lib\\perl5\\core_perl\\auto\\List\\Util\\Util.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.qzd|LightGBM|98",
+   "conf": 98,
+   "sec": 0.555
+  },
+  {
+   "path": "C:\\Program Files\\Git\\mingw64\\bin\\libp11-kit-0.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.xd8|SE-Chain|95",
+   "conf": 95,
+   "sec": 0.878
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\msys-sqlite3-0.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Ransom.v0b|PE-Suspicious|95",
+   "conf": 95,
+   "sec": 0.609
+  },
+  {
+   "path": "C:\\Program Files\\Git\\mingw64\\libexec\\git-core\\libintl-8.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.18c|SE-Chain|80",
+   "conf": 80,
+   "sec": 0.358
+  },
+  {
+   "path": "C:\\Program Files\\Git\\mingw64\\bin\\Avalonia.Base.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|Trojan.Win32.Ransom.i5g|SE-Precise|95",
+   "conf": 95,
+   "sec": 0.079
+  },
+  {
+   "path": "C:\\Program Files\\Git\\mingw64\\bin\\libffi-8.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.dsd|LightGBM|99",
+   "conf": 99,
+   "sec": 0.533
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\lib\\gawk\\time.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.vvw|LightGBM|98",
+   "conf": 98,
+   "sec": 0.457
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\bzip2.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|Trojan.Win32.Generic.r3h|SE-Precise|95",
+   "conf": 95,
+   "sec": 0.07
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\msys-heimntlm-0.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.90g|LightGBM|97",
+   "conf": 97,
+   "sec": 0.503
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\ssh-add.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.f95|PE-Suspicious|95",
+   "conf": 95,
+   "sec": 0.394
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\lib\\gawk\\inplace.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.ba7|LightGBM|99",
+   "conf": 99,
+   "sec": 0.453
+  },
+  {
+   "path": "C:\\Program Files\\Git\\mingw64\\libexec\\git-core\\libgcc_s_seh-1.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.dgw|LightGBM|99",
+   "conf": 99,
+   "sec": 0.561
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\setmetamode.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.rte|PE-Suspicious|95",
+   "conf": 95,
+   "sec": 0.253
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\lib\\perl5\\core_perl\\auto\\Cwd\\Cwd.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.5tw|LightGBM|96",
+   "conf": 96,
+   "sec": 0.445
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\locale.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.rdd|PE-Suspicious|95",
+   "conf": 95,
+   "sec": 0.268
+  },
+  {
+   "path": "C:\\Program Files\\7-Zip\\7zG.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Ransom.j3u|PE-Suspicious|95",
+   "conf": 95,
+   "sec": 0.578
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\lib\\openssl\\engines-3\\capi.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.iac|LightGBM|92",
+   "conf": 92,
+   "sec": 0.442
+  },
+  {
+   "path": "C:\\Program Files\\Git\\mingw64\\lib\\p11-kit\\p11-kit-server.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.s72|SE-Chain|95",
+   "conf": 95,
+   "sec": 0.345
+  },
+  {
+   "path": "C:\\Program Files\\Tencent\\QQNT\\versions\\9.9.36-53644\\resources\\app\\qqkit\\QQKit-portable\\crashpad_handler.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Injector.wrp|SE-Chain|95",
+   "conf": 95,
+   "sec": 1.163
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\unzip.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.eih|LightGBM|99",
+   "conf": 99,
+   "sec": 0.554
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\msys-serf-1-0.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.6rp|PE-Suspicious|95",
+   "conf": 95,
+   "sec": 0.327
+  },
+  {
+   "path": "C:\\Program Files\\Git\\mingw64\\bin\\adig.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.tw3|LightGBM|99",
+   "conf": 99,
+   "sec": 0.579
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\paste.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.4vs|LightGBM|99",
+   "conf": 99,
+   "sec": 0.491
+  },
+  {
+   "path": "C:\\Program Files\\Sandboxie-Plus\\UpdUtil.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.pd5|PE-Suspicious|95",
+   "conf": 95,
+   "sec": 0.334
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\yes.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.chz|LightGBM|99",
+   "conf": 99,
+   "sec": 0.535
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\winpty.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.dk7|SE-Chain|80",
+   "conf": 80,
+   "sec": 0.375
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\iconv.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.w77|LightGBM|95",
+   "conf": 95,
+   "sec": 0.504
+  },
+  {
+   "path": "C:\\Program Files\\NVIDIA Corporation\\Installer2\\CoreTemp.{4A7D271F-62AF-4F64-A9F6-3251BA5C875D}\\setup.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|Trojan.Win32.Generic.bax|SE-Precise|95",
+   "conf": 95,
+   "sec": 0.075
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\sha1sum.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.sy2|LightGBM|99",
+   "conf": 99,
+   "sec": 0.526
+  },
+  {
+   "path": "C:\\Program Files\\Tencent\\QQNT\\versions\\9.9.36-53644\\resources\\app\\CompatibilityCheck.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.vyu|LightGBM|99",
+   "conf": 99,
+   "sec": 0.565
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\ptx.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.bhb|LightGBM|99",
+   "conf": 99,
+   "sec": 0.59
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\who.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.2ir|PE-Suspicious|88",
+   "conf": 88,
+   "sec": 0.312
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\msys-edit-0.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.k9d|LightGBM|73",
+   "conf": 73,
+   "sec": 0.669
+  },
+  {
+   "path": "C:\\Program Files\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\sandbox\\5.5.5\\vcruntime140_1.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|Trojan.Win32.Generic.xxv|SE-Precise|95",
+   "conf": 95,
+   "sec": 0.068
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\cksum.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.4rg|LightGBM|99",
+   "conf": 99,
+   "sec": 0.503
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\trust.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.trg|LightGBM|98",
+   "conf": 98,
+   "sec": 0.641
+  },
+  {
+   "path": "C:\\Program Files\\WorkBuddy\\resources\\app.asar.unpacked\\resources\\plugins\\workbuddy-builtin\\builtin-plugins\\weixinpay\\prebuilds\\win32-x64\\libTencentSM.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.ki3|SE-Chain|81",
+   "conf": 81,
+   "sec": 0.502
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\lib\\perl5\\core_perl\\CORE\\msys-perl5_42.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.35c|PE-Suspicious|95",
+   "conf": 95,
+   "sec": 0.807
+  },
+  {
+   "path": "C:\\Program Files\\Tencent\\QQNT\\versions\\9.9.36-53644\\api-ms-win-crt-stdio-l1-1-0.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|Trojan.Win32.Generic.wyt|SE-Precise|95",
+   "conf": 95,
+   "sec": 0.064
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\lib\\perl5\\core_perl\\auto\\Encode\\Encode.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.xn2|LightGBM|96",
+   "conf": 96,
+   "sec": 0.493
+  },
+  {
+   "path": "C:\\Program Files\\Tencent\\QQNT\\versions\\9.9.36-53644\\resources\\app\\avsdk\\libmp4v2.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.g4g|SE-Chain|95",
+   "conf": 95,
+   "sec": 0.539
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\hostid.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.yd6|LightGBM|99",
+   "conf": 99,
+   "sec": 0.477
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\yat2m.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.k33|LightGBM|99",
+   "conf": 99,
+   "sec": 0.477
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\locate.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.kfc|LightGBM|99",
+   "conf": 99,
+   "sec": 0.613
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\getconf.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.jtf|PE-Suspicious|95",
+   "conf": 95,
+   "sec": 0.27
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\gpg-wks-server.exe",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.j9y|PE-Suspicious|95",
+   "conf": 95,
+   "sec": 0.335
+  },
+  {
+   "path": "C:\\Program Files\\Git\\usr\\bin\\msys-roken-18.dll",
+   "group": "white_pf",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.tb3|PE-Suspicious|95",
+   "conf": 95,
+   "sec": 0.307
+  },
+  {
+   "path": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\153.0.4234.48\\msedgewebview2.exe",
+   "group": "white_pf_x86",
+   "result": "MALICIOUS|Trojan.Win32.Generic.71e|SE-Precise|95",
+   "conf": 95,
+   "sec": 0.095
+  },
+  {
+   "path": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\153.0.4234.48\\msedge.dll",
+   "group": "white_pf_x86",
+   "result": "MALICIOUS|Trojan.Win32.Generic.cdk|SE-Precise|95",
+   "conf": 95,
+   "sec": 1.913
+  },
+  {
+   "path": "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\Optimized\\msedge_pwa_launcher.exe",
+   "group": "white_pf_x86",
+   "result": "MALICIOUS|Trojan.Win32.Launcher.723|SE-Precise|95",
+   "conf": 95,
+   "sec": 0.091
+  },
+  {
+   "path": "C:\\Program Files (x86)\\NVIDIA Corporation\\Display.NvContainer\\NVDisplay.Container.exe",
+   "group": "white_pf_x86",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.14s|LightGBM|77",
+   "conf": 77,
+   "sec": 0.74
+  },
+  {
+   "path": "C:\\Program Files (x86)\\VMware\\VMware Workstation\\vmcli.exe",
+   "group": "white_pf_x86",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Stealer.xew|PE-Suspicious|95",
+   "conf": 95,
+   "sec": 1.444
+  },
+  {
+   "path": "C:\\Program Files (x86)\\Windows Media Player\\zh-CN\\wmlaunch.exe.mui",
+   "group": "white_pf_x86",
+   "result": "MALICIOUS|Trojan.Generic.Generic.4wz|SE-Precise|95",
+   "conf": 95,
+   "sec": 0.073
+  },
+  {
+   "path": "C:\\Program Files (x86)\\Windows Media Player\\zh-CN\\WMPMediaSharing.dll.mui",
+   "group": "white_pf_x86",
+   "result": "MALICIOUS|Trojan.Generic.Generic.rwe|SE-Precise|95",
+   "conf": 95,
+   "sec": 0.066
+  },
+  {
+   "path": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\153.0.4234.48\\msedge_proxy.exe",
+   "group": "white_pf_x86",
+   "result": "MALICIOUS|Trojan.Win32.Proxy.f36|SE-Precise|95",
+   "conf": 95,
+   "sec": 0.09
+  },
+  {
+   "path": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\153.0.4234.48\\msvcp140_codecvt_ids.dll",
+   "group": "white_pf_x86",
+   "result": "MALICIOUS|Trojan.Win32.Generic.pwp|SE-Precise|95",
+   "conf": 95,
+   "sec": 0.071
+  },
+  {
+   "path": "C:\\Program Files (x86)\\Windows Photo Viewer\\zh-CN\\ImagingDevices.exe.mui",
+   "group": "white_pf_x86",
+   "result": "MALICIOUS|Trojan.Generic.Generic.cak|SE-Precise|95",
+   "conf": 95,
+   "sec": 0.069
+  },
+  {
+   "path": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\153.0.4234.48\\dxcompiler.dll",
+   "group": "white_pf_x86",
+   "result": "MALICIOUS|Trojan.Win32.Generic.4dv|SE-Precise|95",
+   "conf": 95,
+   "sec": 0.177
+  },
+  {
+   "path": "C:\\Program Files (x86)\\Internet Explorer\\zh-CN\\ieinstal.exe.mui",
+   "group": "white_pf_x86",
+   "result": "MALICIOUS|Trojan.Generic.Generic.wkv|SE-Precise|95",
+   "conf": 95,
+   "sec": 0.069
+  },
+  {
+   "path": "C:\\Program Files (x86)\\VMware\\VMware Workstation\\mkisofs.exe",
+   "group": "white_pf_x86",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Generic.cy2|LightGBM|99",
+   "conf": 99,
+   "sec": 0.539
+  },
+  {
+   "path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\153.0.4234.48\\BHO\\ie_to_edge_bho.dll",
+   "group": "white_pf_x86",
+   "result": "MALICIOUS|Trojan.Win32.Generic.aq7|SE-Precise|95",
+   "conf": 95,
+   "sec": 0.073
+  },
+  {
+   "path": "C:\\Program Files (x86)\\VMware\\VMware Workstation\\tools-upgraders\\VMwareToolsUpgraderNT.exe",
+   "group": "white_pf_x86",
+   "result": "MALICIOUS|HEUR:Trojan.Win32.Ransom.hp0|SE-Chain|95",
+   "conf": 95,
+   "sec": 0.314
+  },
+  {
+   "path": "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\Optimized\\eventlog_provider.dll",
+   "group": "white_pf_x86",
+   "result": "MALICIOUS|Trojan.Win32.Generic.4vm|SE-Precise|95",
+   "conf": 95,
+   "sec": 0.066
+  },
+  {
+   "path": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\153.0.4234.48\\msedge_elf.dll",
+   "group": "white_pf_x86",
+   "result": "MALICIOUS|Trojan.Win32.Generic.agh|SE-Precise|95",
+   "conf": 95,
+   "sec": 0.095
+  },
+  {
+   "path": "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\153.0.4234.48\\msedge_proxy.exe",
+   "group": "white_pf_x86",
+   "result": "MALICIOUS|Trojan.Win32.Proxy.w60|SE-Precise|95",
+   "conf": 95,
+   "sec": 0.088
+  }
+ ],
+ "white_engine_mix": {
+  "LightGBM-White": 844,
+  "CLEAN": 11
+ },
+ "white_per_app": [
+  {
+   "app": "Git",
+   "n": 126,
+   "fp": 105,
+   "fpr": 83.3
+  },
+  {
+   "app": "Microsoft",
+   "n": 59,
+   "fp": 10,
+   "fpr": 16.9
+  },
+  {
+   "app": "Tencent",
+   "n": 73,
+   "fp": 9,
+   "fpr": 12.3
+  },
+  {
+   "app": "XIGUASecurity",
+   "n": 28,
+   "fp": 3,
+   "fpr": 10.7
+  },
+  {
+   "app": "WorkBuddy",
+   "n": 17,
+   "fp": 3,
+   "fpr": 17.6
+  },
+  {
+   "app": "NVIDIA Corporation",
+   "n": 18,
+   "fp": 3,
+   "fpr": 16.7
+  },
+  {
+   "app": "VMware",
+   "n": 34,
+   "fp": 3,
+   "fpr": 8.8
+  },
+  {
+   "app": "Windows Media Player",
+   "n": 10,
+   "fp": 2,
+   "fpr": 20.0
+  },
+  {
+   "app": "obs-studio",
+   "n": 17,
+   "fp": 2,
+   "fpr": 11.8
+  },
+  {
+   "app": "Sandboxie-Plus",
+   "n": 6,
+   "fp": 1,
+   "fpr": 16.7
+  },
+  {
+   "app": "Realtek",
+   "n": 3,
+   "fp": 1,
+   "fpr": 33.3
+  },
+  {
+   "app": "7-Zip",
+   "n": 2,
+   "fp": 1,
+   "fpr": 50.0
+  },
+  {
+   "app": "Internet Explorer",
+   "n": 9,
+   "fp": 1,
+   "fpr": 11.1
+  },
+  {
+   "app": "Windows Photo Viewer",
+   "n": 5,
+   "fp": 1,
+   "fpr": 20.0
+  },
+  {
+   "app": "Intel",
+   "n": 64,
+   "fp": 0,
+   "fpr": 0.0
+  },
+  {
+   "app": "dotnet",
+   "n": 184,
+   "fp": 0,
+   "fpr": 0.0
+  },
+  {
+   "app": "Dell",
+   "n": 20,
+   "fp": 0,
+   "fpr": 0.0
+  },
+  {
+   "app": "Windows Defender Advanced Threat Protection",
+   "n": 5,
+   "fp": 0,
+   "fpr": 0.0
+  },
+  {
+   "app": "Common Files",
+   "n": 46,
+   "fp": 0,
+   "fpr": 0.0
+  },
+  {
+   "app": "Windows Defender",
+   "n": 13,
+   "fp": 0,
+   "fpr": 0.0
+  },
+  {
+   "app": "Windows Mail",
+   "n": 1,
+   "fp": 0,
+   "fpr": 0.0
+  },
+  {
+   "app": "Windows NT",
+   "n": 3,
+   "fp": 0,
+   "fpr": 0.0
+  },
+  {
+   "app": "WindowsPowerShell",
+   "n": 7,
+   "fp": 0,
+   "fpr": 0.0
+  },
+  {
+   "app": "System32",
+   "n": 250,
+   "fp": 0,
+   "fpr": 0.0
+  }
+ ],
+ "git_split": {
+  "git": {
+   "n": 126,
+   "fp": 105,
+   "fpr": 83.33
+  },
+  "nongit": {
+   "n": 874,
+   "fp": 40,
+   "fpr": 4.58
+  }
+ },
+ "verdict_dist": {
+  "MALICIOUS": 497,
+  "CLEAN": 911,
+  "WHITELIST": 3
+ }
+}

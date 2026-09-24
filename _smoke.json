@@ -1,0 +1,34 @@
+{
+ "deps": {
+  "pefile": "OK",
+  "cryptography": "OK",
+  "onnxruntime": "OK",
+  "lightgbm": "OK",
+  "requests": "OK"
+ },
+ "cloud_ping": {
+  "status": 404,
+  "sec": 0.86
+ },
+ "import_sec": 0.1,
+ "scanner_init_sec": 3.48,
+ "lgbm_available": true,
+ "onnx_available": true,
+ "study_hashes": 47472,
+ "scans": [
+  {
+   "path": "C:\\Windows\\System32\\notepad.exe",
+   "result": "CLEAN|LightGBM-White",
+   "conf": 0,
+   "type": "",
+   "sec": 0.35
+  },
+  {
+   "path": "C:\\Windows\\explorer.exe",
+   "result": "CLEAN|LightGBM-White",
+   "conf": 0,
+   "type": "",
+   "sec": 0.83
+  }
+ ]
+}
